@@ -29,6 +29,6 @@ class BishopBlackTest {
         Cell[] way = new Cell[] {D2, E3, F4, G5};
         BishopBlack bishopBlack = new BishopBlack(C1);
         Cell[] finish = bishopBlack.way(G5);
-        assertThat(finish,is(way));
+        assertThat(finish, is(way));
     }
 }

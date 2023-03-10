@@ -10,7 +10,6 @@ import static org.junit.Assert.assertThrows;
 
 
 public class LogicTest {
-
     @Test
     public void whenFigureNotFoundException()
             throws ImpossibleMoveException {
@@ -29,6 +28,7 @@ public class LogicTest {
             logic.move(Cell.A1, Cell.E6);
         });
     }
+
     @Test
     public void whenOccupiedCellException() throws ImpossibleMoveException {
         Logic logic = new Logic();
