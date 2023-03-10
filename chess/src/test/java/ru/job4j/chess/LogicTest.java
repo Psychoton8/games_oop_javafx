@@ -8,7 +8,6 @@ import ru.job4j.chess.firuges.black.BishopBlack;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertThrows;
 
-
 public class LogicTest {
     @Test
     public void whenFigureNotFoundException()
