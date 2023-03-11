@@ -20,12 +20,15 @@ public final class Logic {
         figures[index] = figures[index].copy(dest);
     }
 
-    private void free(Cell[] steps) throws OccupiedCellException {
+    private boolean free(Cell[] steps) throws OccupiedCellException {
         for (Figure figure : figures) {
             for (Cell cell : steps) {
-                throw new OccupiedCellException("There is a figure");
+                if (figure != null && figure.position().equals(cell)) {
+                    throw new OccupiedCellException("There is a figure");
+                }
             }
         }
+        return true;
     }
 
     public void clean() {
